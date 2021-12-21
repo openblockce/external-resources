@@ -20,10 +20,10 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'NUM',
                         options: [
-                            [Blockly.Msg.TM1640_1, 1],
-                            [Blockly.Msg.TM1640_2, 2],
-                            [Blockly.Msg.TM1640_3, 3],
-                            [Blockly.Msg.TM1640_4, 4]
+                            [Blockly.Msg.TM1640_1, '1'],
+                            [Blockly.Msg.TM1640_2, '2'],
+                            [Blockly.Msg.TM1640_3, '3'],
+                            [Blockly.Msg.TM1640_4, '4']
                         ]
                     },
                     {
@@ -53,18 +53,18 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'NUM',
                         options: [
-                            [Blockly.Msg.TM1640_1, 1],
-                            [Blockly.Msg.TM1640_2, 2],
-                            [Blockly.Msg.TM1640_3, 3],
-                            [Blockly.Msg.TM1640_4, 4]
+                            [Blockly.Msg.TM1640_1, '1'],
+                            [Blockly.Msg.TM1640_2, '2'],
+                            [Blockly.Msg.TM1640_3, '3'],
+                            [Blockly.Msg.TM1640_4, '4']
                         ]
                     },
                     {
                         type: 'field_dropdown',
                         name: 'MODE',
                         options: [
-                            [Blockly.Msg.TM1640_MODE_1, 1],
-                            [Blockly.Msg.TM1640_MODE_0, 0]
+                            [Blockly.Msg.TM1640_MODE_1, '1'],
+                            [Blockly.Msg.TM1640_MODE_0, '0']
                         ]
                     }
                 ],
@@ -84,24 +84,24 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'NUM',
                         options: [
-                            [Blockly.Msg.TM1640_1, 1],
-                            [Blockly.Msg.TM1640_2, 2],
-                            [Blockly.Msg.TM1640_3, 3],
-                            [Blockly.Msg.TM1640_4, 4]
+                            [Blockly.Msg.TM1640_1, '1'],
+                            [Blockly.Msg.TM1640_2, '2'],
+                            [Blockly.Msg.TM1640_3, '3'],
+                            [Blockly.Msg.TM1640_4, '4']
                         ]
                     },
                     {
                         type: 'field_dropdown',
                         name: 'BRIGHTNESS',
                         options: [
-                            [Blockly.Msg.TM1640_1, 1],
-                            [Blockly.Msg.TM1640_2, 2],
-                            [Blockly.Msg.TM1640_3, 3],
-                            [Blockly.Msg.TM1640_4, 4],
-                            [Blockly.Msg.TM1640_5, 5],
-                            [Blockly.Msg.TM1640_6, 6],
-                            [Blockly.Msg.TM1640_7, 7],
-                            [Blockly.Msg.TM1640_8, 8],
+                            [Blockly.Msg.TM1640_1, '1'],
+                            [Blockly.Msg.TM1640_2, '2'],
+                            [Blockly.Msg.TM1640_3, '3'],
+                            [Blockly.Msg.TM1640_4, '4'],
+                            [Blockly.Msg.TM1640_5, '5'],
+                            [Blockly.Msg.TM1640_6, '6'],
+                            [Blockly.Msg.TM1640_7, '7'],
+                            [Blockly.Msg.TM1640_8, '8'],
                         ]
                     }
                 ],
@@ -144,10 +144,10 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'NUM',
                         options: [
-                            [Blockly.Msg.TM1640_1, 1],
-                            [Blockly.Msg.TM1640_2, 2],
-                            [Blockly.Msg.TM1640_3, 3],
-                            [Blockly.Msg.TM1640_4, 4]
+                            [Blockly.Msg.TM1640_1, '1'],
+                            [Blockly.Msg.TM1640_2, '2'],
+                            [Blockly.Msg.TM1640_3, '3'],
+                            [Blockly.Msg.TM1640_4, '4']
                         ]
                     },
                     {

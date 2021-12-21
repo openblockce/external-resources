@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
         const DIO = block.getFieldValue('DIO');
 
         Blockly.Arduino.includes_.tm1640_init = `#include <TM1640_LEDMatrix.h>`;
-        Blockly.Arduino.definitions_.tm1640_init = `LEDMatrix tm1640_${num}(${CLK}, ${DIO});\n`;
+        Blockly.Arduino.definitions_[`tm1640_init_${num}`] = `LEDMatrix tm1640_${num}(${CLK}, ${DIO});\n`;
 
         return ``;
     };
