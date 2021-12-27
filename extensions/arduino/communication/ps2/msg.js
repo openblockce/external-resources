@@ -34,7 +34,7 @@ function addMsg (Blockly) {
         PS2_SQUARE: '方块',
         PS2_SELECT: '选择',
         PS2_START: '开始',
-        PS2_GETJOYSTICK: 'PS2获取摇杆 %1'
+        PS2_GETJOYSTICK: 'PS2摇杆 %1 数值'
     });
     return Blockly;
 }

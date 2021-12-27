@@ -1,17 +1,14 @@
 module.exports = [
     // Buid-in device
+    'arduinoTj2560',
     'arduinoUno',
-    'arduinoNano_arduinoUno',
-    'arduinoMini_arduinoUno',
+    'arduinoNano',
+    'arduinoMini',
     'arduinoLeonardo',
     'arduinoMega2560',
     'arduinoEsp32',
     'arduinoEsp8266',
     'microbit',
-    'microbitV2',
-    'makeyMakey',
+    'microbitV2'
     // Third party
-    'ironKit_arduinoUno',
-    'QDPRobot_arduinoUnoUltra',
-    'QDPRobotC02_arduinoEsp32'
 ];
