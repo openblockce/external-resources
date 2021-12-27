@@ -12,6 +12,13 @@ function addBlocks (Blockly) {
                 args0: [
                     {
                         type: 'field_dropdown',
+                        name: 'PORT',
+                        options: [
+                            ['P6', 'P6']
+                        ]
+                    },
+                    {
+                        type: 'field_dropdown',
                         name: 'COLOUR',
                         options: [
                             ['R', '0'],

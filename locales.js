@@ -117,7 +117,9 @@ module.exports = {
         'tj2560Esp32RemoteControl.name': 'Wireless Remote Control',
         'tj2560Esp32RemoteControl.description': 'Esp32 Wireless remote control.',
         'tj2560OpenMv.name': 'Camera Module',
-        'tj2560OpenMv.description': 'Camera Module.'
+        'tj2560OpenMv.description': 'Camera Module.',
+        'tj2560PowerCore.name': 'Power Core',
+        'tj2560PowerCore.description': 'Power core module contain key, rgb led and digital display.',
     },
     'zh-cn': {
         'apds9960.description': '使用 I2C 接口的接近、灯光、RGB和手势传感器。',
@@ -237,6 +239,8 @@ module.exports = {
         'tj2560Esp32RemoteControl.name': '无线遥控器',
         'tj2560Esp32RemoteControl.description': 'Esp32 无线遥控器模块。',
         'tj2560OpenMv.name': '视觉模块',
-        'tj2560OpenMv.description': 'OpenMV 视觉模块。'
+        'tj2560OpenMv.description': 'OpenMV 视觉模块。',
+        'tj2560PowerCore.name': '核心能量模块',
+        'tj2560PowerCore.description': '核心能量模块。',
     }
 };

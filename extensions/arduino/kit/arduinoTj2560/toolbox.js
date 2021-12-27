@@ -7,61 +7,7 @@ function addToolbox () {
 
     return `
 <category name="%{BKY_ARDUINOTJ2560EXT_CATEGORY}" id="ARDUINOTJ2560EXT_CATEGORY" colour="#4C97FF" secondaryColour="#3373CC"  iconURI="${iconURI}">
-    <block type="arduinoTj2560Ext_setPixelColor" id="arduinoTj2560Ext_setPixelColor">
-        <value name="NO">
-            <shadow type="math_whole_number">
-                <field name="NUM">1</field>
-            </shadow>
-        </value>
-        <value name="COLOR">
-            <shadow type="colour_picker"/>
-        </value>
-    </block>
-    <block type="arduinoTj2560Ext_fill" id="arduinoTj2560Ext_fill">
-        <value name="FIRST">
-            <shadow type="math_whole_number">
-                <field name="NUM">1</field>
-            </shadow>
-        </value>
-        <value name="COUNT">
-            <shadow type="math_whole_number">
-                <field name="NUM">2</field>
-            </shadow>
-        </value>
-        <value name="COLOR">
-            <shadow type="colour_picker"/>
-        </value>
-    </block>
-    <block type="arduinoTj2560Ext_color" id="arduinoTj2560Ext_color">
-        <value name="R">
-            <shadow type="math_uint8_number">
-                <field name="NUM">255</field>
-            </shadow>
-        </value>
-        <value name="G">
-            <shadow type="math_uint8_number">
-                <field name="NUM">255</field>
-            </shadow>
-        </value>
-        <value name="B">
-            <shadow type="math_uint8_number">
-                <field name="NUM">255</field>
-            </shadow>
-        </value>
-    </block>
-    <block type="arduinoTj2560Ext_setBrightness" id="arduinoTj2560Ext_setBrightness">
-        <value name="BRT">
-            <shadow type="math_uint8_number">
-                <field name="NUM">255</field>
-            </shadow>
-        </value>
-    </block>
-    <block type="arduinoTj2560Ext_clear" id="arduinoTj2560Ext_clear">
-    </block>
-    <block type="arduinoTj2560Ext_hc595Show" id="arduinoTj2560Ext_hc595Show">
-    </block>
-    <sep gap="36"/>
-    <block type="arduinoTj2560Ext_playSound" id="arduinoTj2560Ext_playSound">
+        <block type="arduinoTj2560Ext_playSound" id="arduinoTj2560Ext_playSound">
         <value name="FREQ">
             <shadow type="math_whole_number">
                 <field name="NUM">262</field>
@@ -97,8 +43,6 @@ function addToolbox () {
     </block>
     <block type="arduinoTj2560Ext_onBoardEncoderRead" id="arduinoTj2560Ext_onBoardEncoderRead"></block>
     <block type="arduinoTj2560Ext_onBoardEncoderReset" id="arduinoTj2560Ext_onBoardEncoderReset"></block>
-    <sep gap="36"/>
-    <block type="arduinoTj2560Ext_readKey" id="arduinoTj2560Ext_readKey"></block>
 </category>
 `;
 }
