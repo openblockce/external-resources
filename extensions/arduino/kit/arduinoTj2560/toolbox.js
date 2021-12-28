@@ -53,6 +53,8 @@ function addToolbox () {
     </block>
     <block type="arduinoTj2560Ext_bluetoothAvailable" id="arduinoTj2560Ext_bluetoothAvailable"></block>
     <block type="arduinoTj2560Ext_bluetoothReadAByte" id="arduinoTj2560Ext_bluetoothReadAByte"></block>
+    <sep gap="36"/>
+    <block type="arduinoTj2560Ext_irRecive" id="arduinoTj2560Ext_irRecive"></block>
 </category>
 `;
 }

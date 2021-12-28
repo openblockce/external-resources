@@ -303,6 +303,67 @@ function addBlocks (Blockly) {
         }
     };
 
+    Blockly.Blocks.arduinoTj2560Ext_irRecive = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_IRRECIVE, // recive ir remoter channel %1 key %2 pressed?
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'CH',
+                        options: [
+                            ['1', '0'],
+                            ['2', '1'],
+                            ['3', '2'],
+                            ['4', '3'],
+                        ]
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'KEY',
+                        options: [
+                            ['1', '0'],
+                            ['2', '1'],
+                            ['3', '2'],
+                            ['4', '3'],
+                            ['5', '4'],
+                            ['6', '5'],
+                            ['7', '6'],
+                            ['8', '7'],
+                            ['9', '8'],
+                            ['0', '9'],
+                            ['▲', '10'],
+                            ['▼', '11'],
+                            ['▶', '12'],
+                            ['◀', '13'],
+                            ['A', '14'],
+                            [Blockly.Msg.ARDUINOTJ2560EXT_POWER, '15'],
+                            ['C', '16'],
+                            ['E', '17'],
+                            ['P2', '18'],
+                            ['B', '19'],
+                            ['△', '20'],
+                            ['*', '21'],
+                            ['G', '22'],
+                            ['#', '23'],
+                            ['P1', '24'],
+                            ['■', '25'],
+                            ['D', '26'],
+                            ['◁', '27'],
+                            ['□', '28'],
+                            ['▷', '29'],
+                            ['▽', '30'],
+                            ['F', '31'],
+                        ]
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['output_boolean']
+            });
+        }
+    };
+
     return Blockly;
 }
 

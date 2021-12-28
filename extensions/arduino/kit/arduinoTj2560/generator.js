@@ -109,20 +109,42 @@ function addGenerator(Blockly) {
         return `Serial2.print(${data});\n`;
     };
 
-    Blockly.Arduino.arduinoTj2560Ext_bluetoothAvailable = function (block) {
+    Blockly.Arduino.arduinoTj2560Ext_bluetoothAvailable = function () {
         Blockly.Arduino.includes_.bluetooth = `#include <SoftwareSerial.h>`;
         Blockly.Arduino.setups_.bluetooth = `Serial2.begin(115200);`;
 
         return [`Serial2.available()`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
-    Blockly.Arduino.arduinoTj2560Ext_bluetoothReadAByte = function (block) {
+    Blockly.Arduino.arduinoTj2560Ext_bluetoothReadAByte = function () {
         Blockly.Arduino.includes_.bluetooth = `#include <SoftwareSerial.h>`;
         Blockly.Arduino.setups_.bluetooth = `Serial2.begin(115200);`;
 
         return [`Serial2.read()`, Blockly.Arduino.ORDER_ATOMIC];
     };
 
+    Blockly.Arduino.arduinoTj2560Ext_irRecive = function () {
+        Blockly.Arduino.includes_.arduinoTj2560Ext_irRecive = `#include <IRremote.h>\n#include <tjIRRemoter.h>`;
+        Blockly.Arduino.definitions_.arduinoTj2560Ext_irRecive =
+`IRrecv ir(9);
+
+bool irRecive(uint8_t ch, uint8_t key) {
+    if (ir.decode()) {
+        if (ir.decodedIRData.decodedRawData == IRRCCodeList[key][ch]) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}`;
+
+        const ch = this.getFieldValue('CH');
+        const key = this.getFieldValue('KEY');
+
+        return [`irRecive(${ch}, ${key})`, Blockly.Arduino.ORDER_ATOMIC];
+    };
 
     return Blockly;
 }
