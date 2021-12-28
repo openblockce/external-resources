@@ -20,7 +20,7 @@ const ps2 = formatMessage => ({
     msg: 'msg.js',
     library: 'lib',
     tags: ['communication'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    // helpLink: 'https://openblockcc.gitee.io/wiki/main'
 });
 
 module.exports = ps2;

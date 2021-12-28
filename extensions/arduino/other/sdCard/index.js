@@ -20,7 +20,7 @@ const sdCard = formatMessage => ({
     msg: 'msg.js',
     library: 'lib',
     tags: ['other'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    // helpLink: 'https://openblockcc.gitee.io/wiki/main'
 });
 
 module.exports = sdCard;

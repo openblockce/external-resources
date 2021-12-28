@@ -30,7 +30,7 @@ function addToolbox () {
         </value>
         <value name="DATA">
             <shadow type="text">
-                <field name="TEXT">Hello OpenBlock</field>
+                <field name="TEXT">Hello TJBlock</field>
             </shadow>
         </value>
     </block>

@@ -17,7 +17,7 @@ const tcs3200 = formatMessage => ({
     msg: 'msg.js',
     library: 'lib',
     tags: ['sensor'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    // helpLink: 'https://openblockcc.gitee.io/wiki/main'
 });
 
 module.exports = tcs3200;

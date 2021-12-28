@@ -43,6 +43,16 @@ function addToolbox () {
     </block>
     <block type="arduinoTj2560Ext_onBoardEncoderRead" id="arduinoTj2560Ext_onBoardEncoderRead"></block>
     <block type="arduinoTj2560Ext_onBoardEncoderReset" id="arduinoTj2560Ext_onBoardEncoderReset"></block>
+    <sep gap="36"/>
+    <block type="arduinoTj2560Ext_bluetoothPrint" id="arduinoTj2560Ext_bluetoothPrint">
+        <value name="DATA">
+            <shadow type="text">
+                <field name="TEXT">Hello TJBlock</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="arduinoTj2560Ext_bluetoothAvailable" id="arduinoTj2560Ext_bluetoothAvailable"></block>
+    <block type="arduinoTj2560Ext_bluetoothReadAByte" id="arduinoTj2560Ext_bluetoothReadAByte"></block>
 </category>
 `;
 }

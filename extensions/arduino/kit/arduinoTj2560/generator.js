@@ -83,6 +83,46 @@ function addGenerator(Blockly) {
         return `onBoardEncoder_${port}.readAndReset();\n`;
     };
 
+    
+    Blockly.Arduino.softwareSerial_begin = function (block) {
+        const no = Blockly.Arduino.valueToCode(block, 'NO', Blockly.Arduino.ORDER_ATOMIC);
+        const rx = Blockly.Arduino.valueToCode(block, 'RX', Blockly.Arduino.ORDER_ATOMIC);
+        const tx = Blockly.Arduino.valueToCode(block, 'TX', Blockly.Arduino.ORDER_ATOMIC);
+        const baudrate = this.getFieldValue('BAUD');
+
+        Blockly.Arduino.includes_.softwareSerial_begin = `#include <SoftwareSerial.h>`;
+        Blockly.Arduino.definitions_[`softwareSerial_begin${no}`] = `SoftwareSerial softwareSerial_${no}(${rx}, ${tx});`;
+        return `softwareSerial_${no}.begin(${baudrate});\n`;
+    };
+
+    Blockly.Arduino.arduinoTj2560Ext_bluetoothPrint = function (block) {
+        Blockly.Arduino.includes_.bluetooth = `#include <SoftwareSerial.h>`;
+        Blockly.Arduino.setups_.bluetooth = `Serial2.begin(115200);`;
+
+        const data = Blockly.Arduino.valueToCode(block, 'DATA', Blockly.Arduino.ORDER_ATOMIC);
+        const eol = this.getFieldValue('EOL');
+
+        if (eol === '0') {
+
+            return `Serial2.println(${data});\n`;
+        }
+        return `Serial2.print(${data});\n`;
+    };
+
+    Blockly.Arduino.arduinoTj2560Ext_bluetoothAvailable = function (block) {
+        Blockly.Arduino.includes_.bluetooth = `#include <SoftwareSerial.h>`;
+        Blockly.Arduino.setups_.bluetooth = `Serial2.begin(115200);`;
+
+        return [`Serial2.available()`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+
+    Blockly.Arduino.arduinoTj2560Ext_bluetoothReadAByte = function (block) {
+        Blockly.Arduino.includes_.bluetooth = `#include <SoftwareSerial.h>`;
+        Blockly.Arduino.setups_.bluetooth = `Serial2.begin(115200);`;
+
+        return [`Serial2.read()`, Blockly.Arduino.ORDER_ATOMIC];
+    };
+
 
     return Blockly;
 }

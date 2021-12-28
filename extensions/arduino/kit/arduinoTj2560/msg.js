@@ -31,7 +31,12 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_FORWARD: 'foward',
         ARDUINOTJ2560EXT_BACK: 'back',
         ARDUINOTJ2560EXT_ONBOARDENCODERREAD: 'read on board encoder %1 value',
-        ARDUINOTJ2560EXT_ONBOARDENCODERRESET: 'reset on board encoder %1 value'
+        ARDUINOTJ2560EXT_ONBOARDENCODERRESET: 'reset on board encoder %1 value',
+        ARDUINOTJ2560EXT_BLUETOOTHPRINT: 'bluetooth send %1 %2',
+        ARDUINOTJ2560EXT_WARP: 'warp',
+        ARDUINOTJ2560EXT_NOWARP: 'no-warp',
+        ARDUINOTJ2560EXT_BLUETOOTHAVAILABLE: 'bluetooth available data length',
+        ARDUINOTJ2560EXT_BLUETOOTHREADABYTE: 'bluetooth read a byte'
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
         ARDUINOTJ2560EXT_CATEGORY: 'MUGEN',
@@ -63,7 +68,12 @@ function addMsg (Blockly) {
         ARDUINOTJ2560EXT_FORWARD: '前',
         ARDUINOTJ2560EXT_BACK: '后',
         ARDUINOTJ2560EXT_ONBOARDENCODERREAD: '读取板载编码器 %1 数值',
-        ARDUINOTJ2560EXT_ONBOARDENCODERRESET: '重置板载编码器 %1 数值'
+        ARDUINOTJ2560EXT_ONBOARDENCODERRESET: '重置板载编码器 %1 数值',
+        ARDUINOTJ2560EXT_BLUETOOTHPRINT: '蓝牙模块发送 %1 %2',
+        ARDUINOTJ2560EXT_WARP: '换行',
+        ARDUINOTJ2560EXT_NOWARP: '不换行',
+        ARDUINOTJ2560EXT_BLUETOOTHAVAILABLE: '蓝牙模块可用数据长度',
+        ARDUINOTJ2560EXT_BLUETOOTHREADABYTE: '蓝牙模块读取一个字节'
     });
     return Blockly;
 }

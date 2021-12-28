@@ -21,7 +21,7 @@ const passiveBuzzer = formatMessage => ({
     msg: 'msg.js',
     library: 'lib',
     tags: ['actuator'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    // helpLink: 'https://openblockcc.gitee.io/wiki/main'
 });
 
 module.exports = passiveBuzzer;

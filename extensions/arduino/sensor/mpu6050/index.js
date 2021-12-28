@@ -20,7 +20,7 @@ const mpu6050 = formatMessage => ({
     msg: 'msg.js',
     library: 'lib',
     tags: ['sensor'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    // helpLink: 'https://openblockcc.gitee.io/wiki/main'
 });
 
 module.exports = mpu6050;

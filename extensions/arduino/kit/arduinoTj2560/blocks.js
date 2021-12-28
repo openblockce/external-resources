@@ -255,6 +255,54 @@ function addBlocks (Blockly) {
         }
     };
 
+    /* ---------------- 板载蓝牙 ------------------ */
+    Blockly.Blocks.arduinoTj2560Ext_bluetoothPrint = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_BLUETOOTHPRINT,
+                args0: [
+                    {
+                        type: 'input_value',
+                        name: 'DATA'
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'EOL',
+                        options: [
+                            [Blockly.Msg.ARDUINOTJ2560EXT_WARP, '0'],
+                            [Blockly.Msg.ARDUINOTJ2560EXT_NOWARP, '1']
+                        ]
+                    }
+                ],
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    Blockly.Blocks.arduinoTj2560Ext_bluetoothAvailable = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_BLUETOOTHAVAILABLE,
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['output_number']
+            });
+        }
+    };
+
+    Blockly.Blocks.arduinoTj2560Ext_bluetoothReadAByte = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.ARDUINOTJ2560EXT_BLUETOOTHREADABYTE,
+                colour: colour,
+                secondaryColour: secondaryColour,
+                extensions: ['output_string']
+            });
+        }
+    };
+
     return Blockly;
 }
 
